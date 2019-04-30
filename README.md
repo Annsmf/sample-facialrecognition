@@ -243,10 +243,11 @@ Before running the application, obtain the source code package and configure the
     -   **Mean Less\[B|G|R\]**: Indicates the mean value of the image used in the model training. The value can be obtained from the  **sphereface\_model.prototxt**  file of the model.
     -   **Multiplying Factor\[B|G|R\]**: Indicates the multiply coefficient of the image used in this model training. The value can be obtained from the** sphereface\_model.prototxt**  file of the model \(that is, the value of  **scale**\).
 
--   Download the dependent software library
+-   Download the dependent software libraries
     
      Download the dependent software libraries to the **sample-facialrecognition/script** directory.
-    **Table  2**  Download the dependent software library
+
+    **Table  2**  Download the dependent software libraries
 
     <a name="en-us_topic_0167333413_table141761431143110"></a>
     <table><thead align="left"><tr id="en-us_topic_0167333413_row18177103183119"><th class="cellrowborder" valign="top" width="33.33333333333333%" id="mcps1.2.4.1.1"><p id="en-us_topic_0167333413_p8177331103112"><a name="en-us_topic_0167333413_p8177331103112"></a><a name="en-us_topic_0167333413_p8177331103112"></a>Module Name</p>
