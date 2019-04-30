@@ -1,5 +1,3 @@
-# Facial Recognition\_single<a name="EN-US_TOPIC_0167573069"></a>
-
 Developers can deploy the application on the Atlas 200 DK to register a face, predict the face information in the video by using the camera, and compare the predicted face with the registered face to predict the most possible user.
 
 ## Prerequisites<a name="en-us_topic_0167333413_section412314183119"></a>
@@ -48,7 +46,7 @@ Before running the application, obtain the source code package and configure the
     -   _host\_ip_: this parameter indicates the IP address of the Atlas 200 DK developer board.
 
     -   _model\_mode_  indicates the deployment mode of the model file. The default setting is  **internet**.
-        -   **local**: If the Ubuntu system where Mind Studio is located is not connected to the network, use the local mode. In this case, download the network model file and the dependent common code library  to the  **/sample-facialrecognition/script**_** **_directory, by referring to  [Downloading Network Models and Dependency Code Library](#en-us_topic_0167333413_section866041015517).
+        -   **local**: If the Ubuntu system where Mind Studio is located is not connected to the network, use the local mode. In this case, download the network model file and the dependent common code library  to the  **/sample-facialrecognition/script** directory, by referring to  [Downloading Network Models and Dependency Code Library](#en-us_topic_0167333413_section866041015517).
         -   **internet**: If the Ubuntu system where Mind Studio is located is connected to the network, use the Internet mode. In this case, download the model file and  dependency code library online.
 
 
@@ -100,7 +98,7 @@ Before running the application, obtain the source code package and configure the
 
     **bash run\_facialrecognitionapp.sh 192.168.1.2 video Channel-1 &**
 
-2.  Use the URL that is displayed when you start the Presenter Server service to log in to the Presenter Server website \(only the Chrome browser is supported\). For details, see  [en-us\_topic\_0165443730.md\#li499911453439](en-us_topic_0165443730.md#li499911453439).
+2.  Use the URL that is displayed when you start the Presenter Server service to log in to the Presenter Server website \(only the Chrome browser is supported\).
 
     [Figure 4](#en-us_topic_0167333413_fig1189774382115)  shows the Presenter Server page.
 
