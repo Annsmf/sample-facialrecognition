@@ -1,3 +1,5 @@
+EN|[CN](README_cn.md)
+
 Developers can deploy the application on the Atlas 200 DK to register a face, predict the face information in the video by using the camera, and compare the predicted face with the registered face to predict the most possible user.
 
 ## Prerequisites<a name="en-us_topic_0167333413_section412314183119"></a>
