@@ -44,6 +44,12 @@ function kill_remote_running()
 {
     echo -e "run.sh exit, kill ${remote_host}:ascend_facialrecognitionapp running..."
     parse_remote_port
+	iRet=$(IDE-daemon-client --host ${remote_host}:${remote_port} --hostcmd "kill \$(pidof ~/HIAI_PROJECTS/ascend_workspace/facialrecognitionapp/out/ascend_facialrecognitionapp)")
+	if [[ $? -eq 0 ]];then
+		echo "$iRet in ${remote_host}."
+		return 0
+	fi
+
     iRet=$(IDE-daemon-client --host ${remote_host}:${remote_port} --hostcmd "for p in \`pidof ascend_facialrecognitionapp\`; do { echo \"kill \$p\"; kill \$p; }; done")
     if [[ $? -ne 0 ]];then
         echo "ERROR: kill ${remote_host}:ascend_facialrecognitionapp running failed, please login to kill it manually."
