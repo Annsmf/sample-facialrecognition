@@ -56,7 +56,7 @@ Before running the application, obtain the source code package and configure the
 
     **bash deploy.sh 192.168.1.2 internet**
 
-    -   When the message  **Please choose one to show the presenter in browser\(default: 12107.0.0.1\):**  is displayed, enter the IP address used for accessing the Presenter Server service in the browser. Generally, the IP address is the IP address for accessing the Mind Studio service.
+    -   When the message  **Please choose one to show the presenter in browser\(default: 127.0.0.1\):**  is displayed, enter the IP address used for accessing the Presenter Server service in the browser. Generally, the IP address is the IP address for accessing the Mind Studio service.
     -   When the message  **Please input a absolute path to storage facial recognition data:**  is displayed, enter the path for storing face registration data and parsing data in Mind Studio. The Mind Studio user must have the read and write permissions. If the path does not exist, the script will automatically create it.
 
     Select the IP address used by the browser to access the Presenter Server service in  **Current environment valid ip list**  and enter the path for storing facial recognition data, as shown in  [Figure 1](#en-us_topic_0167333413_fig184321447181017).
