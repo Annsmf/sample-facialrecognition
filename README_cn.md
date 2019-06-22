@@ -15,7 +15,7 @@
 
 1.  获取源码包。
 
-    将[https://github.com/Ascend/sample-facialrecognition](https://github.com/Ascend/sample-facialrecognition)仓中的代码以Mind Studio安装用户下载至Mind Studio所在Ubuntu服务器的任意目录，例如代码存放路径为：_/home/ascend/sample-facialrecognition_。
+    将[https://github.com/Ascend/sample-facialrecognition](https://github.com/Ascend/sample-facialrecognition)仓中的代码以Mind Studio安装用户下载至Mind Studio所在Ubuntu服务器的任意目录，例如代码存放路径为：/home/ascend/sample-facialrecognition。
 
 2.  以Mind Studio安装用户登录Mind Studio所在Ubuntu服务器，并设置环境变量DDK\_HOME。
 
@@ -92,7 +92,7 @@
 
     **bash run\_facialrecognitionapp.sh** _host\_ip_ _presenter\_view\_app\_name  camera\_channel\_name_   &
 
-    -   _host\_ip：_对于Atlas 200 DK开发者板，即为开发者板的IP地址。
+    -   _host\_ip_ :对于Atlas 200 DK开发者板，即为开发者板的IP地址。
     -   _presenter\_view\_app\_name_：用户自定义的在PresenterServer界面展示的App Name。
     -   _camera\_channel\_name_：摄像头所属Channel，取值为“Channel-1“或者“Channel-2“，查询摄像头所属Channel的方法请参考[Atlas 200 DK使用指南](https://www.huawei.com/minisite/ascend/cn/filedetail_2.html)。
 
@@ -108,7 +108,7 @@
     ![](doc/source/img/Presenter-Server界面.png "Presenter-Server界面")
 
     >![](doc/source/img/icon-note.gif) **说明：**   
-    >-   Facial Recognition的Presenter Server最多支持2路Channel同时显示，每个_presenter\_view\_app\_name_对应一路Channel。  
+    >-   Facial Recognition的Presenter Server最多支持2路Channel同时显示，每个 _presenter\_view\_app\_name_ 对应一路Channel。  
     >-   由于硬件的限制，每一路支持的最大帧率是20fps，受限于网络带宽的影响，帧率会自动适配较低的帧率进行显示。  
 
 3.  进行人脸注册。
@@ -122,7 +122,7 @@
 
 4.  人脸识别以及比对。
 
-    进入“App List“页签，在界面中点击对应的“App Name“，例如_video_，若有人脸出现在摄像头中，且与已注册人脸匹配一致，则会出现对应人员姓名及相似度的标注。
+    进入“App List“页签，在界面中点击对应的“App Name“，例如 _video_ ，若有人脸出现在摄像头中，且与已注册人脸匹配一致，则会出现对应人员姓名及相似度的标注。
 
 
 ## 后续处理<a name="zh-cn_topic_0167217669_section1092612277429"></a>
