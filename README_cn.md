@@ -154,7 +154,7 @@
     ascend 22294 20313 22 14:45 pts/24?? 00:00:01 python3 presenterserver/presenter_server.py --app facial_recognition
     ```
 
-    如上所示_22294_即为人脸识别应用对应的Presenter Server服务的进程ID。
+    如上所示 _22294_ 即为人脸识别应用对应的Presenter Server服务的进程ID。
 
     若想停止此服务，执行如下命令：
 
