@@ -161,8 +161,8 @@ bool FaceFeatureMaskProcess::Crop(const shared_ptr<FaceRecognitionInfo> &face_re
     u_int32_t lt_vert = ((face_img_iter->rectangle.lt.y) >> 1) << 1;
 
     // Change the left top coordinate to odd numver
-    u_int32_t rb_horz = (((face_img_iter->rectangle.rb.x) >> 1) << 1) + 1;
-    u_int32_t rb_vert = (((face_img_iter->rectangle.rb.y) >> 1) << 1) + 1;
+    u_int32_t rb_horz = (((face_img_iter->rectangle.rb.x) >> 1) << 1) - 1;
+    u_int32_t rb_vert = (((face_img_iter->rectangle.rb.y) >> 1) << 1) - 1;
     HIAI_ENGINE_LOG("The crop is from left-top(%d,%d) to right-bottom(%d,%d)",
                     lt_horz, lt_vert, rb_horz, rb_vert);
     u_int32_t cropped_width = rb_horz - lt_horz + 1;
