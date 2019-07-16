@@ -41,7 +41,7 @@
 ## 部署<a name="zh-cn_topic_0167217669_section147911829155918"></a>
 
 1.  以MindSpore Studio安装用户进入facialrecognition应用代码所在根目录，如_**/home/ascend/sample-facialrecognition**_。
-2.  <a name="zh-cn_topic_0167217669_li08019112542"></a>执行部署脚本，进行工程环境准备，包括ascenddk公共库的编译与部署、网络模型的下载、Presenter Server服务器的配置等操作。
+2.  <a name="zh-cn_topic_0167217669_li08019112542"></a>执行部署脚本，进行工程环境准备，包括ascenddk公共库的编译与部署、网络模型的下载、Presenter Server服务器的配置等操作，其中Presenter Server用于接收Application发送过来的数据并通过浏览器进行结果展示。
 
     **bash deploy.sh** _host\_ip_ _model\_mode_
 
@@ -93,7 +93,7 @@
     **bash run\_facialrecognitionapp.sh** _host\_ip_ _presenter\_view\_app\_name  camera\_channel\_name_   &
 
     -   _host\_ip_ :对于Atlas 200 DK开发者板，即为开发者板的IP地址。
-    -   _presenter\_view\_app\_name_：用户自定义的在PresenterServer界面展示的App Name。
+    -   _presenter\_view\_app\_name_：用户自定义的在PresenterServer界面展示的App Name，此名称需要在Presenter Server展示界面保持唯一。
     -   _camera\_channel\_name_：摄像头所属Channel，取值为“Channel-1“或者“Channel-2“，查询摄像头所属Channel的方法请参考[Atlas 200 DK使用指南](https://www.huawei.com/minisite/ascend/cn/filedetail_2.html)中的“常用操作 > 如何查询摄像头所属Channel”。
 
     命令示例：
@@ -270,8 +270,8 @@
     </td>
     <td class="cellrowborder" valign="top" width="33.33333333333333%" headers="mcps1.2.4.1.2 "><p id="zh-cn_topic_0167217669_p141558552182"><a name="zh-cn_topic_0167217669_p141558552182"></a><a name="zh-cn_topic_0167217669_p141558552182"></a>与Presenter Server进行交互的API接口。</p>
     </td>
-    <td class="cellrowborder" valign="top" width="33.33333333333333%" headers="mcps1.2.4.1.3 "><p id="zh-cn_topic_0167217669_p161550554182"><a name="zh-cn_topic_0167217669_p161550554182"></a><a name="zh-cn_topic_0167217669_p161550554182"></a><a href="https://github.com/Ascend/sdk-presenter/tree/master/presenteragent" target="_blank" rel="noopener noreferrer">https://github.com/Ascend/sdk-presenter/tree/master/presenteragent</a></p>
-    <p id="zh-cn_topic_0167217669_p1315510552181"><a name="zh-cn_topic_0167217669_p1315510552181"></a><a name="zh-cn_topic_0167217669_p1315510552181"></a>下载后请保持文件夹名称为presenteragent。</p>
+    <td class="cellrowborder" valign="top" width="33.33333333333333%" headers="mcps1.2.4.1.3 "><p id="zh-cn_topic_0167217669_p161550554182"><a name="zh-cn_topic_0167217669_p161550554182"></a><a name="zh-cn_topic_0167217669_p161550554182"></a><a href="https://github.com/Ascend/sdk-presenter/tree/master" target="_blank" rel="noopener noreferrer">https://github.com/Ascend/sdk-presenter/tree/master</a></p>
+    <p id="zh-cn_topic_0167217669_p1315510552181"><a name="zh-cn_topic_0167217669_p1315510552181"></a><a name="zh-cn_topic_0167217669_p1315510552181"></a>请获取此路径下的presenteragent文件夹，下载后请保持文件夹名称为presenteragent。</p>
     </td>
     </tr>
     <tr id="zh-cn_topic_0167217669_row1155135541815"><td class="cellrowborder" valign="top" width="33.33333333333333%" headers="mcps1.2.4.1.1 "><p id="zh-cn_topic_0167217669_p1615565571815"><a name="zh-cn_topic_0167217669_p1615565571815"></a><a name="zh-cn_topic_0167217669_p1615565571815"></a>tornado (5.1.0)</p>
@@ -280,7 +280,7 @@
     </td>
     <td class="cellrowborder" valign="top" width="33.33333333333333%" headers="mcps1.2.4.1.2 "><p id="zh-cn_topic_0167217669_p1155355121816"><a name="zh-cn_topic_0167217669_p1155355121816"></a><a name="zh-cn_topic_0167217669_p1155355121816"></a>Presenter Server依赖的Python库</p>
     </td>
-    <td class="cellrowborder" valign="top" width="33.33333333333333%" headers="mcps1.2.4.1.3 "><p id="zh-cn_topic_0167217669_p1155135511187"><a name="zh-cn_topic_0167217669_p1155135511187"></a><a name="zh-cn_topic_0167217669_p1155135511187"></a>请自行搜索相关源进行安装。</p>
+    <td class="cellrowborder" valign="top" width="33.33333333333333%" headers="mcps1.2.4.1.3 "><p id="zh-cn_topic_0167217669_p1155135511187"><a name="zh-cn_topic_0167217669_p1155135511187"></a><a name="zh-cn_topic_0167217669_p1155135511187"></a>可以在python官网 https://pypi.org/ 上搜索相关包进行安装。若使用pip3 install命令在线下载，可以使用如下命令指定相关版本进行下载，例如：</p><p>pip3 install tornado==5.1.0  -i  指定库的安装源  --trusted-host  安装源的主机名</p>
     </td>
     </tr>
     </tbody>
