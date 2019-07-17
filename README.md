@@ -41,7 +41,7 @@ Before running the application, obtain the source code package and configure the
 ## Deployment<a name="en-us_topic_0167333413_section1675513165418"></a>
 
 1.  Access the root directory where the facial recognition application code is located as the MindSpore Studio installation user, for example,  **_/home/ascend/sample-facialrecognition_**.
-2.  <a name="en-us_topic_0167333413_li08019112542"></a>Run the deployment script to prepare the project environment, including compiling and deploying the ascenddk public library, downloading the network model, and configuring Presenter Server.
+2.  <a name="en-us_topic_0167333413_li08019112542"></a>Run the deployment script to prepare the project environment, including compiling and deploying the ascenddk public library, downloading the network model, and configuring Presenter Server. The Presenter Server is used to receive the data sent by the application and display the result through the browser.
 
     **bash deploy.sh** _host\_ip_ _model\_mode_
 
@@ -93,7 +93,7 @@ Before running the application, obtain the source code package and configure the
     **bash run\_facialrecognitionapp.sh** _host\_ip_ _presenter\_view\_app\_name camera\_channel\_name_  &
 
     -   _host\_ip_: For the Atlas 200 DK developer board, this parameter indicates the IP address of the developer board.
-    -   _presenter\_view\_app\_name_: Indicates  **App Name**  displayed on the Presenter Server page, which is user-defined.
+    -   _presenter\_view\_app\_name_: Indicates  **App Name**  displayed on the Presenter Server page, which is user-defined. The value of this parameter must be unique on the Presenter Server page.
     -   _camera\_channel\_name_: Indicates the channel to which a camera belongs. The value can be  **Channel-1**  or  **Channel-2**. For details, see  **Common Operations > View the Channel to Which a Camera Belongs** of [Atlas 200 DK User Guide](https://www.huawei.com/minisite/ascend/en/filedetail_2.html).
     
     Example command:
@@ -272,15 +272,15 @@ Before running the application, obtain the source code package and configure the
     </td>
     <td class="cellrowborder" valign="top" width="33.33333333333333%" headers="mcps1.2.4.1.2 "><p id="en-us_topic_0167333413_p19431399359"><a name="en-us_topic_0167333413_p19431399359"></a><a name="en-us_topic_0167333413_p19431399359"></a><span>API for interacting with the Presenter Server</span>.</p>
     </td>
-    <td class="cellrowborder" valign="top" width="33.33333333333333%" headers="mcps1.2.4.1.3 "><p id="en-us_topic_0167333413_p16684144715560"><a name="en-us_topic_0167333413_p16684144715560"></a><a name="en-us_topic_0167333413_p16684144715560"></a><a href="https://github.com/Ascend/sdk-presenter/tree/master/presenteragent" target="_blank" rel="noopener noreferrer">https://github.com/Ascend/sdk-presenter/tree/master/presenteragent</a></p>
-    <p id="en-us_topic_0167333413_p82315442578"><a name="en-us_topic_0167333413_p82315442578"></a><a name="en-us_topic_0167333413_p82315442578"></a>After the download, keep the folder name <span class="filepath" id="en-us_topic_0167333413_filepath19800155745817"><a name="en-us_topic_0167333413_filepath19800155745817"></a><a name="en-us_topic_0167333413_filepath19800155745817"></a><b>presenteragent</b></span>.</p>
+    <td class="cellrowborder" valign="top" width="33.33333333333333%" headers="mcps1.2.4.1.3 "><p id="en-us_topic_0167333413_p16684144715560"><a name="en-us_topic_0167333413_p16684144715560"></a><a name="en-us_topic_0167333413_p16684144715560"></a><a href="https://github.com/Ascend/sdk-presenter/tree/master" target="_blank" rel="noopener noreferrer">https://github.com/Ascend/sdk-presenter/tree/master</a></p>
+    <p id="en-us_topic_0167333413_p82315442578"><a name="en-us_topic_0167333413_p82315442578"></a><a name="en-us_topic_0167333413_p82315442578"></a>>Obtain the presenteragent folder in this path, after the download, keep the folder name <span class="filepath" id="en-us_topic_0167333413_filepath19800155745817"><a name="en-us_topic_0167333413_filepath19800155745817"></a><a name="en-us_topic_0167333413_filepath19800155745817"></a><b>presenteragent</b></span>.</p>
     </td>
     </tr>
     <tr id="en-us_topic_0167333650_row101773315313"><td class="cellrowborder" valign="top" width="33.33333333333333%" headers="mcps1.2.4.1.1 "><p>tornado (5.1.0)</p><p>protobuf (3.5.1)</p><p>numpy (1.14.2)</P>
 </td>
 <td class="cellrowborder" valign="top" width="33.33333333333333%" headers="mcps1.2.4.1.2 "><p id="en-us_topic_0167333650_p19431399359"><a name="en-us_topic_0167333650_p19431399359"></a><a name="en-us_topic_0167333650_p19431399359"></a><span>Python libraries that Presenter Server depends on.</span>.</p>
 </td>
-<td class="cellrowborder" valign="top" width="33.33333333333333%" headers="mcps1.2.4.1.3 "><p id="en-us_topic_0167333650_p16684144715560">Search for related sources and install them.</p>
+<td class="cellrowborder" valign="top" width="33.33333333333333%" headers="mcps1.2.4.1.3 "><p id="en-us_topic_0167333650_p16684144715560">You can search for related packages on the Python official website https://pypi.org/ for installation. If you run the pip3 install command to download the file online, you can run the following command to specify the version to be downloaded: </p><p><b>pip3 install tornado==5.1.0 -i  <i>Installation source of the specified library</i>  --trusted-host <i>Host name of the installation source</i></b></p>
 </td>
 </tr>
     </tbody>
