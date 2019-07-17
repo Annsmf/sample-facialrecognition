@@ -83,7 +83,7 @@ Before running the application, obtain the source code package and configure the
     **Figure  3**  Home page<a name="en-us_topic_0167333413_fig64391558352"></a>  
     ![](doc/source/img/home-page.png "home-page")
 
-   **Figure 4** Example IP Address <a name="en-us_topic_0167333823_fig64391558353"></a>  
+    **Figure 4** Example IP Address <a name="en-us_topic_0167333823_fig64391558353"></a>  
     ![](doc/source/img/connect.png "Example IP Address")
 
     Among them:
@@ -112,7 +112,7 @@ Before running the application, obtain the source code package and configure the
 
     [Figure 4](#en-us_topic_0167333413_fig1189774382115)  shows the Presenter Server page.
 
-    **Figure  4**  Presenter Server page<a name="en-us_topic_0167333413_fig1189774382115"></a>  
+    **Figure  5**  Presenter Server page<a name="en-us_topic_0167333413_fig1189774382115"></a>  
     ![](doc/source/img/presenter-server-page.png "presenter-server-page")
 
     >![](doc/source/img/icon-note.gif) **NOTE:**   
