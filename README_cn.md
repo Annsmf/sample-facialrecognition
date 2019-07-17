@@ -83,6 +83,15 @@
     **图 3**  主页显示<a name="zh-cn_topic_0167217669_fig64391558352"></a>  
     ![](doc/source/img/主页显示.png "主页显示")
 
+	**图 4** IP地址示例 <a name="zh-cn_topic_0167333823_fig64391558353"></a>  
+    ![](doc/source/img/connect.png "IP地址示例")
+
+    其中：
+    - Atlas 200 DK开发者板使用的IP地址为192.168.1.2（USB方式连接）。
+    - Presenter Server与Atlas 200 DK通信的IP地址为UI Host服务器中与Atlas 200 DK在同一网段的IP地址，例如：192.168.1.223。
+    - 通过浏览器访问Presenter Server的IP地址本示例为：10.10.0.1，由于Presenter Server与MindSpore Studio部署在同一服务器，此IP地址也为通过浏览器访问MindSpre Studio的IP。
+
+
 
 ## 运行<a name="zh-cn_topic_0167217669_section1676879104"></a>
 
@@ -104,7 +113,7 @@
 
     Presenter Server展示界面如[图4](#zh-cn_topic_0167217669_fig1189774382115)所示。
 
-    **图 4**  Presenter Server界面<a name="zh-cn_topic_0167217669_fig1189774382115"></a>  
+    **图 5**  Presenter Server界面<a name="zh-cn_topic_0167217669_fig1189774382115"></a>  
     ![](doc/source/img/Presenter-Server界面.png "Presenter-Server界面")
 
     >![](doc/source/img/icon-note.gif) **说明：**   
