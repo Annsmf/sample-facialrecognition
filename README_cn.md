@@ -6,8 +6,8 @@
 
 部署此Sample前，需要准备好以下环境：
 
--   已完成MindSpore Studio的安装，详细请参考[MindSpore Studio安装指南](https://www.huawei.com/minisite/ascend/cn/filedetail_1.html)。
--   已完成Atlas 200 DK开发者板与MindSpore Studio的连接，交叉编译器的安装，SD卡的制作及基本信息的配置等，详细请参考[Atlas 200 DK使用指南](https://www.huawei.com/minisite/ascend/cn/filedetail_2.html)。
+-   已完成MindSpore Studio的安装。
+-   已完成Atlas 200 DK开发者板与MindSpore Studio的连接，交叉编译器的安装，SD卡的制作及基本信息的配置等。
 
 ## 软件准备<a name="zh-cn_topic_0167217669_section8534138124114"></a>
 
@@ -103,7 +103,7 @@
 
     -   _host\_ip_ :对于Atlas 200 DK开发者板，即为开发者板的IP地址。
     -   _presenter\_view\_app\_name_：用户自定义的在PresenterServer界面展示的App Name，此名称需要在Presenter Server展示界面保持唯一。
-    -   _camera\_channel\_name_：摄像头所属Channel，取值为“Channel-1“或者“Channel-2“，查询摄像头所属Channel的方法请参考[Atlas 200 DK使用指南](https://www.huawei.com/minisite/ascend/cn/filedetail_2.html)中的“常用操作 > 如何查询摄像头所属Channel”。
+    -   _camera\_channel\_name_：摄像头所属Channel，取值为“Channel-1“或者“Channel-2“，查询摄像头所属Channel的方法请参考[Atlas 200 DK使用指南](https://ascend.huawei.com/documentation)中的“如何查询摄像头所属Channel”。
 
     命令示例：
 

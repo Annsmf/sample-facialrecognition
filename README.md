@@ -6,8 +6,8 @@ Developers can deploy the application on the Atlas 200 DK to register a face, pr
 
 Before using an open source application, ensure that:
 
--   MindSpore Studio has been installed. For details, see  [MindSpore Studio Installation Guide](https://www.huawei.com/minisite/ascend/en/filedetail_1.html).
--   The Atlas 200 DK developer board has been connected to MindSpore Studio, the cross compiler has been installed, the SD card has been prepared, and basic information has been configured. For details, see  [Atlas 200 DK User Guide](https://www.huawei.com/minisite/ascend/en/filedetail_2.html).
+-   MindSpore Studio has been installed.
+-   The Atlas 200 DK developer board has been connected to MindSpore Studio, the cross compiler has been installed, the SD card has been prepared, and basic information has been configured. 
 
 ## Software Preparation<a name="en-us_topic_0167333413_section431629175317"></a>
 
@@ -102,7 +102,7 @@ Before running the application, obtain the source code package and configure the
 
     -   _host\_ip_: For the Atlas 200 DK developer board, this parameter indicates the IP address of the developer board.
     -   _presenter\_view\_app\_name_: Indicates  **App Name**  displayed on the Presenter Server page, which is user-defined. The value of this parameter must be unique on the Presenter Server page.
-    -   _camera\_channel\_name_: Indicates the channel to which a camera belongs. The value can be  **Channel-1**  or  **Channel-2**. For details, see  **Common Operations > View the Channel to Which a Camera Belongs** of [Atlas 200 DK User Guide](https://www.huawei.com/minisite/ascend/en/filedetail_2.html).
+    -   _camera\_channel\_name_: Indicates the channel to which a camera belongs. The value can be  **Channel-1**  or  **Channel-2**. For details, see  **View the Channel to Which a Camera Belongs** of [Atlas 200 DK User Guide](https://ascend.huawei.com/documentation).
     
     Example command:
 
