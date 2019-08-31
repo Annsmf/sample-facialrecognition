@@ -1,3 +1,5 @@
+EN|[CN](README_cn.md)
+
 # Facial Recognition<a name="EN-US_TOPIC_0167573069"></a>
 
 Developers can deploy the application on the Atlas 200 DK to register a face, predict the face information in the video by using the camera, and compare the predicted face with the registered face to predict the most possible user.
