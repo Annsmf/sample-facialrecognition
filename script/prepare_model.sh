@@ -60,18 +60,29 @@ function prepare()
             fi
         done
     else
-        bash ${script_path}/download_model.sh ${tools_version} ${model_names}
-        
-        if [ $? -ne 0 ];then
-            return 1
-        fi
-
         for model_info in ${model_names}
         do
             model_name=`basename ${model_info}`
-            mkdir -p ${app_path}/MyModel/${model_name}/device
-            cp ${script_path}/${model_name}_${tools_version}.om ${app_path}/MyModel/${model_name}/device/${model_name}.om
+            if [ ! -f "${script_path}/${model_name}.om" ];then
+                echo "ERROR: No ${model_name}.om in current path: ${script_path} for internet mode."
+                return 1
+            else
+                mkdir -p ${app_path}/MyModel/${model_name}/device
+                cp ${script_path}/${model_name}.om ${app_path}/MyModel/${model_name}/device/
+            fi
         done
+        #bash ${script_path}/download_model.sh ${tools_version} ${model_names}
+        
+        #if [ $? -ne 0 ];then
+            #return 1
+        #fi
+
+        #for model_info in ${model_names}
+        #do
+            #model_name=`basename ${model_info}`
+            #mkdir -p ${app_path}/MyModel/${model_name}/device
+            #cp ${script_path}/${model_name}_${tools_version}.om ${app_path}/MyModel/${model_name}/device/${model_name}.om
+        #done
 
     fi
 
@@ -80,8 +91,8 @@ function prepare()
 
 main()
 {
-    #model_names="computer_vision/object_detect/face_detection computer_vision/classification/sphereface computer_vision/classification/vanillacnn"
-    model_names="face_detection sphereface vanillacnn"
+    model_names="computer_vision/object_detect/face_detection computer_vision/classification/sphereface computer_vision/classification/vanillacnn"
+    #model_names="face_detection sphereface vanillacnn"
     prepare ${model_names}
     if [ $? -ne 0 ];then
         exit 1
